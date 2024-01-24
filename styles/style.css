@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   display: grid;
-  min-height: 668px;
+  min-block-size: 668px;
   margin-block-end: 31px;
   padding: 10px;
 }
@@ -31,8 +31,8 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .decorative-element::before {
@@ -42,8 +42,8 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .header__decorative-element {
@@ -136,7 +136,7 @@
   font-weight: 700;
   line-height: 82.5%;
   align-self: center;
-  max-height: 192px;
+  max-block-size: 192px;
   box-sizing: border-box;
   padding-block-start: 2.5%;
 }
@@ -167,7 +167,7 @@
   align-self: center;
   justify-self: end;
   margin-block-end: 6.5%;
-  max-width: 355px;
+  max-inline-size: 355px;
 }
 /*.......................................main................................................................*/
 
@@ -218,7 +218,7 @@
 }
 
 .gallery {
-  max-width: 1024px;
+  max-inline-size: 1024px;
 }
 
 .gallery__container {
@@ -230,14 +230,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 666px;
+  min-block-size: 666px;
   margin-block-start: 25px;
   position: relative;
   margin-block-end: 0;
 }
+
 .title_padding_auto {
   padding-block-start: 0;
 }
+
 @media (min-width: 768px) {
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -250,7 +252,7 @@
   }
 
   .header {
-    min-height: 1024px;
+    min-block-size: 1024px;
     background-position: top;
     background-size: cover;
     padding: 20px 20px 20px 0px;
@@ -258,7 +260,7 @@
 
   .header__text-container {
     justify-self: end;
-    max-width: 364px;
+    max-inline-size: 364px;
     margin-block-end: 10.5%;
   }
 
@@ -284,7 +286,6 @@
   .title_padding_auto {
     padding-block-start: 0;
   }
-  /*...........................................main............................................................*/
 
   .why {
     display: grid;
@@ -297,7 +298,7 @@
   }
 
   .what__subtopic {
-    max-width: 20%;
+    max-inline-size: 20%;
   }
 
   .how {
@@ -306,17 +307,16 @@
   }
 
   .how__text-container {
-    max-width: 472px;
+    max-inline-size: 472px;
     padding-inline-start: 1.5%;
   }
-  /*...........................................gallery............................................................*/
 
   .gallery__picture {
-    height: 100%;
+    block-size: 100%;
   }
 
   .gallery__container {
-    margin-top: 20px;
+    margin-block-start: 20px;
     gap: 15px 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -349,14 +349,14 @@
   }
 
   .footer {
-    min-height: 1012px;
+    min-block-size: 1012px;
     margin-block-end: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
-    min-height: 768px;
+    min-block-size: 768px;
   }
 
   .title {
@@ -370,7 +370,7 @@
   }
 
   .header__text-container {
-    max-width: 491px;
+    max-inline-size: 491px;
     align-self: end;
     margin-block-end: 11.5%;
   }
@@ -386,24 +386,24 @@
     justify-content: space-between;
   }
   .what__blocks-container {
-    max-width: 315px;
+    max-inline-size: 315px;
   }
 
   .what__subtopic {
-    max-width: 260px;
+    max-inline-size: 260px;
   }
 
   .how__text-container {
     padding-inline-start: 0;
-    max-width: 648px;
+    max-inline-size: 648px;
   }
 
   .title-subtopic {
-    max-width: 315px;
+    max-inline-size: 315px;
   }
 
   .footer {
-    min-height: 772px;
+    min-block-size: 772px;
     margin-block-end: 0;
   }
   .title_padding_auto {
