@@ -9,13 +9,13 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color: #FF0070;
-  --color-text: #F1B2CE;
-  --color-title: #DB00FF;
+  --accent-color: #ff0070;
+  --color-text: #f1b2ce;
+  --color-title: #db00ff;
   --background-color: #000028;
-  --color-subtitle:#000028;
-  --color-subtopic:#FF0070;
-  --color-decorative-element:#FF0070;
+  --color-subtitle: #000028;
+  --color-subtopic: #ff0070;
+  --color-decorative-element: #ff0070;
   --visibility-decorative-element: visible;
-  --accent-cover: url('../images/cover-image-dark.png');
+  --accent-cover: url("../images/cover-image-dark.png");
 }

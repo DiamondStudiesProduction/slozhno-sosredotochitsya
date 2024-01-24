@@ -149,6 +149,11 @@
   background-color: var(--accent-color);
 }
 
+.header__text-start,
+.header__text-end {
+  display: inline-block;
+}
+
 .subtitle {
   color: var(--color-subtitle);
   font-family: var(--page-font-family);
@@ -252,12 +257,9 @@
   }
 
   .header__text-container {
+    justify-self: end;
     max-width: 364px;
     margin-block-end: 10.5%;
-  }
-
-  .header__text-container {
-    justify-self: end;
   }
 
   .header__theme-menu {
