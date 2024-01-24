@@ -2,4 +2,413 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--page-font-family);
+  font-size: var(--font-size-text);
+  background-color: var(--background-color);
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  background-image: var(--accent-cover);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: grid;
+  min-height: 668px;
+  margin-block-end: 31px;
+  padding: 10px;
+}
+
+.container {
+  padding: 10px;
+  margin-block-end: 10px;
+}
+
+.decorative-element::after {
+  content: "";
+  border-block-start: 1px solid var(--color-decorative-element);
+  border-inline-end: 1px solid var(--color-decorative-element);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.decorative-element::before {
+  content: "";
+  border-block-end: 1px solid var(--color-decorative-element);
+  border-inline-start: 1px solid var(--color-decorative-element);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.header__decorative-element {
+  visibility: var(--visibility-decorative-element);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: var(--accent-color);
+  font-size: var(--font-size-text);
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__decorative-element::after {
+  content: "";
+  display: inline-block;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-color);
+  border-radius: 100%;
+  box-shadow: 0px 0px 7px 2px var(--accent-color);
+}
+
+.header__theme-menu {
+  align-self: end;
+  padding-block-end: 7%;
+  justify-self: flex-end;
+}
+
+.header__theme-menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.header__theme-menu-button {
+  color: var(--color-decorative-element);
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--color-decorative-element);
+  padding-inline-start: 13px;
+  padding-inline-end: 13px;
+}
+.header__theme-menu-button_type_light:hover {
+  color: #ff0070;
+  border: 1px solid #ff0070;
+}
+
+.header__theme-menu-button_type_dark:hover {
+  color: #353430;
+  border: 1px solid #353430;
+}
+
+.header__theme-menu-button_type_dark:focus {
+  color: #353430;
+  border-block-end: 1px solid #353430;
+}
+
+.header__theme-menu-button_type_light:focus {
+  color: #ff0070;
+  border-block-end: 1px solid #ff0070;
+}
+
+.header__theme-menu-button_type_dark:focus-visible {
+  color: #353430;
+  border-block-end: 1px solid #353430;
+}
+
+.header__theme-menu-button_type_light:focus-visible {
+  color: #ff0070;
+  border-block-end: 1px solid #ff0070;
+}
+
+.title {
+  color: var(--color-title);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  font-family: var(--page-font-family);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  align-self: center;
+  max-height: 192px;
+  box-sizing: border-box;
+  padding-block-start: 2.5%;
+}
+
+.title_box-shadow_less {
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.subtitle {
+  color: var(--color-subtitle);
+  font-family: var(--page-font-family);
+  font-size: var(--font-size-text);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.header__text-container {
+  align-self: center;
+  justify-self: end;
+  margin-block-end: 6.5%;
+  max-width: 355px;
+}
+/*.......................................main................................................................*/
+
+.title-subtopic {
+  color: var(--color-subtopic);
+  font-family: var(--page-font-family);
+  font-size: var(--font-size-text);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-block-end: var(--text-title-margin);
+}
+
+.subtitle-color {
+  background-color: var(--accent-color);
+}
+
+.subtitle_margin-bottom {
+  margin-block-end: var(--text-margin);
+}
+
+.subtitle_margin-top {
+  margin-block-start: var(--text-title-margin);
+}
+
+.main-text {
+  color: var(--color-text);
+  font-family: var(--page-font-family);
+  font-size: var(--font-size-text);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  margin-block-end: 20px;
+}
+
+.href-into-text {
+  color: var(--color-text);
+  text-shadow: 4px 2px 0px var(--accent-color);
+  text-decoration: none;
+}
+
+.href-into-text:hover {
+  border-block-end: 1px solid var(--color-text);
+}
+
+.href-into-text:focus {
+  border: 1px solid var(--color-text);
+}
+
+.gallery {
+  max-width: 1024px;
+}
+
+.gallery__container {
+  display: grid;
+  gap: 4px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 666px;
+  margin-block-start: 25px;
+  position: relative;
+  margin-block-end: 0;
+}
+.title_padding_auto {
+  padding-block-start: 0;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    padding-block-start: 12.5%;
+  }
+
+  .container {
+    padding: 20px;
+    margin-block-end: 19px;
+  }
+
+  .header {
+    min-height: 1024px;
+    background-position: top;
+    background-size: cover;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .header__text-container {
+    max-width: 364px;
+    margin-block-end: 10.5%;
+  }
+
+  .header__text-container {
+    justify-self: end;
+  }
+
+  .header__theme-menu {
+    padding-block-end: 0%;
+    padding-block-start: 10px;
+  }
+
+  .header__decorative-element {
+    top: 20px;
+    right: 30px;
+  }
+
+  .decorative-element::after {
+    right: 20px;
+    top: 20px;
+  }
+
+  .decorative-element::before {
+    bottom: 20px;
+    left: 20px;
+  }
+  .title_padding_auto {
+    padding-block-start: 0;
+  }
+  /*...........................................main............................................................*/
+
+  .why {
+    display: grid;
+    grid-template-columns: 1fr 2.3fr;
+    padding-block-start: 30px;
+  }
+
+  .why__text-container {
+    padding-inline-start: 37px;
+  }
+
+  .what__subtopic {
+    max-width: 20%;
+  }
+
+  .how {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .how__text-container {
+    max-width: 472px;
+    padding-inline-start: 1.5%;
+  }
+  /*...........................................gallery............................................................*/
+
+  .gallery__picture {
+    height: 100%;
+  }
+
+  .gallery__container {
+    margin-top: 20px;
+    gap: 15px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "sunset sunset ice-cream"
+      "tape books ."
+      ". street street"
+      ". . .";
+  }
+
+  .gallery__item-sunset {
+    grid-area: sunset;
+  }
+
+  .gallery__item-ice-cream {
+    grid-area: ice-cream;
+    grid-row: 1 / 3;
+  }
+
+  .gallery__item-tape {
+    grid-area: tape;
+    grid-row: 2 / 4;
+  }
+
+  .gallery__item-books {
+    grid-area: books;
+  }
+
+  .gallery__item-street {
+    grid-area: street;
+  }
+
+  .footer {
+    min-height: 1012px;
+    margin-block-end: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    min-height: 768px;
+  }
+
+  .title {
+    padding-block-start: 11.5%;
+  }
+
+  .header__theme-menu {
+    padding-block-start: 0;
+    align-self: auto;
+    justify-self: auto;
+  }
+
+  .header__text-container {
+    max-width: 491px;
+    align-self: end;
+    margin-block-end: 11.5%;
+  }
+
+  .header__theme-menu-list {
+    margin-inline-start: 3%;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .what__container-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .what__blocks-container {
+    max-width: 315px;
+  }
+
+  .what__subtopic {
+    max-width: 260px;
+  }
+
+  .how__text-container {
+    padding-inline-start: 0;
+    max-width: 648px;
+  }
+
+  .title-subtopic {
+    max-width: 315px;
+  }
+
+  .footer {
+    min-height: 772px;
+    margin-block-end: 0;
+  }
+  .title_padding_auto {
+    padding-block-start: 0;
+  }
+
+  .title {
+    text-shadow: 4px 4px 0px #ff0070;
+  }
 }
