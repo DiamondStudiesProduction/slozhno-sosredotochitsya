@@ -8,6 +8,14 @@
   background-attachment: fixed;
 }
 
+.theme_auto {
+  background-image: var(--cover);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
 .header {
   block-size: 100vh;
   position: relative;
