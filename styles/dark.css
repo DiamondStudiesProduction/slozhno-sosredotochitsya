@@ -17,5 +17,10 @@
   --color-subtopic: #ff0070;
   --color-decorative-element: #ff0070;
   --visibility-decorative-element: visible;
-  --accent-cover: url("../images/cover-image-dark.png");
+  --color-button-auto: rgba(255, 0, 112, 0.4);
+  background-image: url("../images/cover-image-dark.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }

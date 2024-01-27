@@ -6,9 +6,9 @@
   --color-subtopic: #ff0070;
   --color-subtitle: #000028;
   --color-decorative-element: #ff0070;
+  --color-button-auto: rgba(255, 0, 112, 0.4);
   --font-size-text: 18px;
-  --page-font-family: "IBM Plex Mono", Times, serif;
-  --accent-cover: url("../images/cover-image-dark.png");
+  --page-font-family: "IBM Plex Mono", monospace;
   --text-title-margin: 20px;
   --text-margin: 10px;
   --visibility-decorative-element: visible;
