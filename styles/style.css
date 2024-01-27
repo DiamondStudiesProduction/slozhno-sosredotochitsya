@@ -367,6 +367,7 @@
 @media (min-width: 1024px) {
   .title {
     padding-block-start: 15.5%;
+    text-shadow: 4px 4px 0px #ff0070;
   }
 
   .header__theme-menu {
@@ -418,9 +419,5 @@
   }
   .title_padding_auto {
     padding-block-start: 0;
-  }
-
-  .title {
-    text-shadow: 4px 4px 0px #ff0070;
   }
 }
