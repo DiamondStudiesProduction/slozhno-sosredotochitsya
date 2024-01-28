@@ -18,10 +18,11 @@
   --color-decorative-element: #ff0070;
   --visibility-decorative-element: visible;
   --color-button-auto: rgba(255, 0, 112, 0.4);
+  --border-button-block-end: 1px solid var(--color-decorative-element);
   --cover: url("../images/cover-image-dark.png");
-  background-image: url("../images/cover-image-dark.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --visibility-decorative-element: hidden;
+  }
 }

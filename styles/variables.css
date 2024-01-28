@@ -13,4 +13,8 @@
   --text-margin: 10px;
   --visibility-decorative-element: visible;
   --cover: url("../images/cover-image-dark.png");
+  --border-button: 1px solid var(--color-button-auto);
+  --border-button-block-end: 1px solid var(--color-decorative-element);
+  --value-none: "none";
+  --button-padding: 13px;
 }
