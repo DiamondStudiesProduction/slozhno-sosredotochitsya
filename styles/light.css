@@ -16,6 +16,7 @@
   --color-title: #ffc2e6;
   --background-color: #fff1f7;
   --color-decorative-element: #353430;
+  --visibility-decorative-element: hidden;
   --color-button-auto: rgba(50, 49, 45, 0.4);
   --cover: url("../images/cover-image-light.png");
 }
@@ -31,7 +32,6 @@
     --color-decorative-element: #353430;
     --visibility-decorative-element: hidden;
     --cover: url("../images/cover-image-light.png");
-    --border-button-block-end: 1px solid var(--color-decorative-element);
     --color-button-auto: rgba(50, 49, 45, 0.4);
   }
 }

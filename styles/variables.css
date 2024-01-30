@@ -6,15 +6,13 @@
   --color-subtopic: #ff0070;
   --color-subtitle: #000028;
   --color-decorative-element: #ff0070;
-  --color-button-auto: rgba(255, 0, 112, 0.4);
+  --color-button-auto: #ff007066;
   --font-size-text: 18px;
   --page-font-family: "IBM Plex Mono", monospace;
   --text-title-margin: 20px;
   --text-margin: 10px;
   --visibility-decorative-element: visible;
   --cover: url("../images/cover-image-dark.png");
-  --border-button: 1px solid var(--color-button-auto);
-  --border-button-block-end: 1px solid var(--color-decorative-element);
   --value-none: "none";
   --button-padding: 13px;
 }

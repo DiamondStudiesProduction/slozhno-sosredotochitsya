@@ -17,12 +17,11 @@
   --color-subtopic: #ff0070;
   --color-decorative-element: #ff0070;
   --visibility-decorative-element: visible;
-  --color-button-auto: rgba(255, 0, 112, 0.4);
-  --border-button-block-end: 1px solid var(--color-decorative-element);
+  --color-button-auto: #ff007066;
   --cover: url("../images/cover-image-dark.png");
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --visibility-decorative-element: hidden;
+    --visibility-decorative-element: visible;
   }
 }
